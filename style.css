@@ -50,6 +50,7 @@ header
 
 ul
 {
+    width: 100%;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -125,34 +126,34 @@ a
 
 #atractive-block
 {
-    position: relative;
-}
-
-.background-image
-{
-    opacity: .4;
-}
-
-#atractive-block > section
-{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5em;
 
+    position: relative;
+}
+
+#atractive-block > p
+{
+    font-weight: bold;
+}
+
+.seta-baixo
+{
+    display: block;
+    text-align: center;
+}
+
+#atractive-block > picture
+{
+    z-index: -1;
+    opacity: 0.4;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    max-height: 100%;
-}
-
-#atractive-block > section > p
-{
-
-    text-shadow: var(--myYellow) 2px 2px 1px;
 }
 
 .btn 
@@ -191,6 +192,7 @@ address
     padding: 2em;
 }
 
+
 footer
 {
     font-weight: bold;
@@ -200,6 +202,17 @@ footer
 {
     padding: 3em;
     background-color: var(--myYellow);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#social_media_2
+{
+    width: 70%;
+    padding-top: 1em;
 }
 
 .credits
@@ -245,7 +258,7 @@ footer
         flex-basis: 100%;
     }
 
-    #main-nav
+    #header-nav
     {
         width: 60%;
     }
@@ -255,25 +268,32 @@ footer
         width: 30%;
     }
 
-    #location > section > p
+    .simple-text
     {
-        text-align: center;
+        max-width: 550px;
+        margin: auto;
+        padding: 1em 3em;
     }
 }
 
 @media screen and (min-width: 800px)
 {
-    #main-nav
+    #header-nav
     {
         width: 40%;
     }
 
     .title2, .title3
     {
-        padding: 0;
+        padding: 0.5em;
     }
 
-    #address
+    .simple-text, #social_media_2
+    {
+        max-width: 700px;
+    }
+
+    #location
     {
         margin-top: 2em;
         display: flex;
@@ -281,7 +301,7 @@ footer
         justify-content: center;
     }
 
-    #address > section
+    #location > section
     {
         width: 50%;
 
@@ -308,14 +328,13 @@ footer
         flex-basis: initial;
     }
 
-    #main-logo, #main-nav, #social-media
+    #main-logo, #header-nav, #social-media
     {
         width: 30%;
     }
 
-    #location > section > p
+    .simple-text
     {
-        text-align: center;
+        max-width: 800px;
     }
-
 }

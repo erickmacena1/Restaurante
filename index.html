@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1 class="logo" id="main-logo"><span id="txt1">RESTAURANTE</span> <span id="txt2">R</span> </h1>
 
-        <nav id="main-nav">
+        <nav id="header-nav">
             <ul class="">
                 <li><a href="#sobre" class="navItens slowMove">SOBRE</a></li>
                 <li><a href="" class="navItens">CARDÁPIO</a></li>
@@ -28,9 +30,11 @@
         <nav id="social-media">
             <ul class="">
                 <li><a href=""><img src="assets/social-media-icons/whatsapp-32px.svg" alt="Nosso Whatsapp"></li></a>
-                <li><a href="https://www.instagram.com/erick.macena1/"><img src="assets/social-media-icons/instagram-32px.svg" alt="Nosso Instagram"></li></a>
+                <li><a href="https://www.instagram.com/erick.macena1/"><img
+                            src="assets/social-media-icons/instagram-32px.svg" alt="Nosso Instagram"></li></a>
                 <li><a href=""><img src="assets/social-media-icons/facebook-32px.svg" alt="Nosso Facebook"></li></a>
-                <li><a href="tel:+5582999999999"><img src="assets/social-media-icons/phone-32px.svg" alt="Nosso Telegone"></a></li>
+                <li><a href="tel:+5582999999999"><img src="assets/social-media-icons/phone-32px.svg"
+                            alt="Nosso Telegone"></a></li>
             </ul>
         </nav>
     </header>
@@ -39,66 +43,78 @@
         <picture>
             <source media="(max-width:500px)" srcset="assets/site-photos/garcom-500px.jpg">
             <source media="(max-width:1050px)" srcset="assets/site-photos/garcom-1000px.jpg">
-            <img src="assets/site-photos/garcom-1500px.jpg" alt="Garçon segurando um prato de salada e um prato de camarão" style="width: 100%;">
+            <img src="assets/site-photos/garcom-1500px.jpg"
+                alt="Garçon segurando um prato de salada e um prato de camarão" style="width: 100%;">
         </picture>
+
         <article>
-            <section class="content-block">
-                <h1 class="title" id="sobre">O MELHOR DA REGIÃO</h1>
-                <p class="simple-text">Esse paragrafo, assim como o site, é apenas ilustrativo. Esse site é meu primeiro portfólio. Venha experimentar nossas comidas tradicionais no restaurante mais requisitado do nordeste!</p>
+            <section id="sobre" class="content-block">
+                <h1 class="title">O MELHOR DA REGIÃO</h1>
+                <p class="simple-text">Esse paragrafo, assim como o site, é apenas ilustrativo. Esse site é meu primeiro
+                    portfólio. Venha experimentar nossas comidas tradicionais no restaurante mais requisitado do
+                    nordeste!</p>
             </section>
 
-            <section id="atractive-block">
+            <section id="atractive-block" class="content-block">
+
+                <h2 class="title2">PRATOS DELICIOSOS</h2>
+                <p class="simple-text">Confira nossas iguarias. Temos um prato especial para você. Dê uma olhada em
+                    nosso cardápio!<br><span class="seta-baixo">👇</span></p>
+
+                <a class="btn">CARDÁPIO VIRTUAL</a>
+
                 <picture class="background-image">
-                    <source media="(max-width:1050px)" srcset="assets/site-photos/grande-refeicao-500px.jpg">
-                    <img src="assets/site-photos/grande-refeicao-1000px.jpg" alt="Mesa cheia de comida" width="100%" loading="lazy">
+                    <source media="(max-width:600px)" srcset="assets/site-photos/grande-refeicao-500px.jpg">
+                    <source media="(max-width:1050px)" srcset="assets/site-photos/grande-refeicao-1000px-cropped.jpg">
+                    <img src="assets/site-photos/grande-refeicao-1500px-cropped.jpg" alt="Mesa cheia de comida"
+                        width="100%" height="100%" loading="lazy">
                 </picture>
-
-                <section class="content-block">
-                    <h2 class="title2">PRATOS DELICIOSOS</h2>
-                    <p class="simple-text">Confira nossas iguarias! Temos um prato especial para você! Dê uma olhada em nosso cardápio 👇</p>
-
-                    <a class="btn">CARDÁPIO VIRTUAL</a>
-                </section>
             </section>
 
             <section class="content-block" id="location">
-                <section class="locationChild">
+                <section>
                     <h2 class="title2">VENHA NOS VISITAR</h2>
                     <p class="simple-text">
                         Traga sua familia parar saborar o que há de melhor na culinaria regional!
                     </p>
+
+                    <address>
+                        <span style="white-space:nowrap;">Estamos localizados em</span><br>
+                        Rua Porto Calvo - Canaã, Maceió/AL
+                    </address>
                 </section>
 
-                <section class="locationChild" id="address">
-                    <section>
-                        <address>
-                            <span style="white-space:nowrap;">Estamos localizados em</span><br>
-                            Rua Porto Calvo - Canaã, Maceió/AL
-                        </address>
-                    </section>
-                    
-                    
-                    <section>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3933.883876075497!2d-35.7405759265915!3d-9.605266485255875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x701461fbe704f8f%3A0x3275fdd98e385e87!2zUi4gUMO0cnRvIENhbHZvIC0gQ2FuYcOjLCBNYWNlacOzIC0gQUw!5e0!3m2!1sen!2sbr!4v1619216663460!5m2!1sen!2sbr" width="100%" height="350" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
+                <section>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3933.883876075497!2d-35.7405759265915!3d-9.605266485255875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x701461fbe704f8f%3A0x3275fdd98e385e87!2zUi4gUMO0cnRvIENhbHZvIC0gQ2FuYcOjLCBNYWNlacOzIC0gQUw!5e0!3m2!1sen!2sbr!4v1619216663460!5m2!1sen!2sbr"
+                        width="100%" height="350" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
 
-                    </section>
                 </section>
-                
+
+
             </section>
         </article>
     </main>
 
     <footer>
-        
+
         <section class="myFooter">
             <h3 class="title3">Ficou com vontade?</h3>
-            <p class="simple-text">Liga para gente! 📲<a style="text-decoration: underline; font-weight: bolder;" href="tel:+5582999999999">+55 (82)99999-9999</a>. <br>Também atendemos em todas as redes sociais! 👇</p>
 
-            <nav>
-                <ul id="social_media" class="">
+            <p class="simple-text">Liga para gente! 📲<a style="text-decoration: underline; font-weight: bolder;"
+                    href="tel:+5582999999999">+55 (82)99999-9999</a>. Também atendemos em todas as redes sociais!
+            </p>
+
+            <p class="seta-baixo">👇</p>
+
+            <nav id="social_media_2">
+                <ul>
                     <li><a href=""><img src="assets/social-media-icons/whatsapp-32px.svg" alt="Nosso Whatsapp"></li></a>
+                    
                     <li><a href="https://www.instagram.com/erick.macena1/"><img src="assets/social-media-icons/instagram-32px.svg" alt="Nosso Instagram"></li></a>
+
                     <li><a href=""><img src="assets/social-media-icons/facebook-32px.svg" alt="Nosso Facebook"></li></a>
+
                     <li><a href="tel:+5582999999999"><img src="assets/social-media-icons/phone-32px.svg" alt="Nosso Telegone"></a></li>
                 </ul>
             </nav>
@@ -107,9 +123,15 @@
         <section class="credits">
             <h3 class="title3">Créditos</h3>
             <a target="_blank" rel="external" href="https://icons8.com/">Icons by Icons8</a>
-            <a target="_blank" rel="external" href="https://www.pexels.com/pt-br/foto/pessoa-segurando-pratos-de-confeitaria-em-pratos-de-ceramica-branca-262978/">Primeira imagem (Dois pratos de comida)</a>
+            <a target="_blank" rel="external"
+                href="https://www.pexels.com/pt-br/foto/pessoa-segurando-pratos-de-confeitaria-em-pratos-de-ceramica-branca-262978/">Primeira
+                imagem (Dois pratos de comida)</a>
+            <a target="_blank" rel="external"
+                href="https://www.pexels.com/pt-br/foto/prato-cozido-servido-em-bandeja-preta-958547/">Segunda imagem
+                (Comidas papel de parede)</a>
         </section>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
