@@ -121,36 +121,69 @@ a
 
 /*============\/ BODY \/=============*/
 
-main > article > section
+main
 {
-    padding: 3em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
-#form-block
+main > h1
 {
-    border-top: 1px solid var(--myBrown);
-    border-bottom: 1px solid var(--myBrown);
+    width: 100%;
+}
 
+main > article
+{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+main > article > section
+{
+    padding: 3em;
+    border-top: 1px solid var(--myBrown);
+    width: 100%;
+    max-width: 465px;
 }
 
 #form-block > form
 {
-    padding: 1em 0;
-
-    display: flex;
-    flex-direction: column;
+    max-width: 380px;
+    margin: auto;
 }
 
-#form-block > form > input, #msg
+form > ul
+{
+    width: 100%;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+#subBtnLi
+{
+    text-align: center;
+}
+
+#form-block > form input, #msg
 {
     outline: none;
     color: inherit;
     padding: .6rem .4rem;
     margin: .4rem;
+    width: 100%;
     border: 3px solid var(--myBrown);
 }
 
-#form-block > form > input:focus, #msg:focus
+#form-block > form input:focus, #msg:focus
 {
     border-color: var(--myYellow);
 }
@@ -170,6 +203,37 @@ main > article > section
     height: 100px;
     font: inherit;
     font-size: 13px;
+}
+
+.subBtn 
+{
+	background-color:white;
+	border-radius:4px;
+	border:2px solid var(--myBrown);
+    display: inline-block;
+    font-weight: bolder;
+	cursor:pointer;
+	color: var(--myBrown);
+	padding: 1em;
+    text-align: center;
+    text-shadow: 0px 1px 0px var(--myBrown);
+	text-decoration:none;
+    max-width: 130px;
+    right: 0;
+}
+
+.subBtn:hover {
+	background-color:#ffd51b;
+}
+.subBtn:active {
+	position:relative;
+	top:1px;
+}
+
+address
+{
+    text-align: justify;
+    line-height: 2rem;
 }
 
 /*============\/ FOOTER \/=============*/
@@ -268,6 +332,11 @@ footer
         margin: auto;
         padding: 1em 3em;
     }
+
+    main > article > section
+    {
+        width: unset;
+    }
 }
 
 @media screen and (min-width: 800px)
@@ -285,6 +354,18 @@ footer
     .simple-text, #social_media_2
     {
         max-width: 700px;
+    }
+}
+
+@media screen and (min-width: 906px)
+{
+    main > h1
+    {
+        border-bottom: 1px solid var(--myBrown);
+    }
+    main > article > section
+    {
+        border-top: none;
     }
 }
 
