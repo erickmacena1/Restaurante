@@ -6,7 +6,7 @@ I made this website with my friends to be our first portfolio.
 
 ## HomePage
 
-[![Website homepage gif](github\homepage.gif)](https://erickrestaurante.netlify.app/)
+[![Website homepage gif](https://github.com/erickmacena1/Restaurante/blob/master/github/homepage.gif)](https://erickrestaurante.netlify.app/)
 
 
 ## Tecnologies Used
